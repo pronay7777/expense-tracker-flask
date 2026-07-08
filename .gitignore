@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+
+expense_tracker.db
+
+.env
+.vscode/
+
+.DS_Store
+Thumbs.db
