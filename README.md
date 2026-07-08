@@ -2,6 +2,9 @@
 
 A full-stack Expense Tracker web application built with Flask and SQLite. The application allows users to manage income and expenses, view financial summaries, search and filter transactions, sort records, and perform complete CRUD operations through a responsive web interface.
 
+## Application Preview
+![alt text](expense-tracker-dashboard.png)
+
 ## Features
 
 - Add income and expense transactions
