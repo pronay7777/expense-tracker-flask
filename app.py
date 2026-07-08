@@ -9,7 +9,10 @@ from flask import (
 )
 
 app = Flask(__name__)
-app.secret_key = os.eviron.get("SECRET KEY", "development-secret-key")
+app.secret_key = os.environ.get(
+    "SECRET KEY", 
+    "development-secret-key"
+)
 
 DATABASE = "expense_tracker.db"
 
@@ -256,7 +259,8 @@ def delete_transaction(transaction_id):
 
     return redirect(url_for("home"))
 
+# Initialize the database when the application starts.
+init_db()
 
 if __name__ == "__main__":
-    init_db()
     app.run(debug=True)
