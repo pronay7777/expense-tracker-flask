@@ -2,6 +2,13 @@
 
 A full-stack Expense Tracker web application built with Flask and SQLite. The application allows users to manage income and expenses, view financial summaries, search and filter transactions, sort records, and perform complete CRUD operations through a responsive web interface.
 
+## Live Demo
+
+The application is deployed online and can be accessed here:
+
+**Live Application:**
+https://expense-tracker-flask-0we9.onrender.com/
+
 ## Application Preview
 ![alt text](expense-tracker-dashboard.png)
 
@@ -117,6 +124,24 @@ The local database file is excluded from version control through `.gitignore`.
 - POST requests for state-changing operations
 - Environment-variable support for the Flask secret key
 - Delete confirmation before removing transactions
+
+## Deployment
+
+The application is deployed as a Python web service.
+
+Production configuration:
+
+- Hosting Platform: render
+- Production Server: Gunicorn
+- WSGI Entry Point: 'wsgi.py'
+- Start Command: 'gunicorn wsgi:app'
+- Environment variable support for the Flask secret key
+
+### Deployment Note
+
+The current deployed version users SQLite. On the free hosting instance, local filesystem data may not persist across service restarts or redeployments.
+
+A production-ready future version can use PostgreSQL for persistent cloud database storage.
 
 ## Future Improvements
 
